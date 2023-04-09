@@ -1,4 +1,6 @@
 import React, { useEffect } from "react";
+import NavBar from "./Components/NavBar";
+import { Outlet } from "react-router-dom";
 
 function App() {
   useEffect(() => {
@@ -16,7 +18,11 @@ function App() {
 
   return (
     <>
-      <div className='text-center font-bold text-blue-400 text-5xl mt-10'>This Is Our About Page 😃</div>
+      {/* ====NavBar===== */}
+      <NavBar />
+      <Outlet/>
+      {/* ====Footer===== */}
+
     </>
   );
 }
