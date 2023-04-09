@@ -8,7 +8,7 @@ const Header = () => {
       {/* Text Content */}
       <div className='mb-10 lg:max-w-lg  lg:pr-5 lg:mb-0'>
         <div className='max-w-xl mb-6 lg:mt-8'>
-          <h2 className='max-w-lg md:w-{50px} mb-6 font-sans text-3xl md:text-5xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none'>
+          <h2 className='max-w-lg  mb-6 font-sans text-3xl md:text-5xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none'>
             One Step Closer To Your <span className='gradient-text font-extrabold mb-3'>Dream Job</span>
           </h2>
           <p className='text-base text-gray-700 md:text-lg'>

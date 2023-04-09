@@ -4,7 +4,7 @@ const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   return (
     <>
-      <div className='px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8'>
+      <div className='px-4 sticky top-0 z-10 bg-white shadow-sm py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8'>
         <div className='relative flex items-center justify-between'>
           <Link
             to='/'
@@ -149,7 +149,7 @@ const NavBar = () => {
                       </li>
                     </ul>
                     <Link to="/applied">
-                      <button type="button" className="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Applied Jobs</button>
+                      <button type="button" className="mt-5 text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Applied Jobs</button>
                     </Link>
                   </nav>
                 </div>
