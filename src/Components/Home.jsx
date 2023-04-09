@@ -1,13 +1,16 @@
 import React from 'react';
-import Catagory from './Catagory';
+import Jobcatagory from './Jobcatagory';
 import JobCard from './JobCard';
 import Header from './Header';
+import { useLoaderData } from 'react-router-dom';
 
 const Home = () => {
+  const jobsCatagoryData = useLoaderData()
+
   return (
     <>
       <Header/>
-      <Catagory />
+      <Jobcatagory jobsCatagoryData={jobsCatagoryData} />
       <JobCard/>
     </>
   );

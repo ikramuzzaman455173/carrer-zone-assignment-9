@@ -1,22 +1,22 @@
 {
   "category": [
     {
-      "logo": "",
+      "logo": "./assets/Icons/accounts.png",
       "name": "Account & Finance",
       "jobs_available": "300 Jobs Available"
     },
     {
-      "logo": "https://example.com/google_logo.png",
+      "logo": "./assets/Icons/business.png",
       "name": "Creative Design",
       "jobs_available": "100+ Jobs Available"
     },
     {
-      "logo": "https://example.com/microsoft_logo.png",
+      "logo": "./assets/Icons/socialMedia.png",
       "name": "Marketing & Sales",
       "jobs_available": "150 Jobs Available"
     },
     {
-      "logo": "https://example.com/facebook_logo.png",
+      "logo": "./assets/Icons/chip.png",
       "name": "Engineering Job",
       "jobs_available": "224 Jobs Available"
     }
