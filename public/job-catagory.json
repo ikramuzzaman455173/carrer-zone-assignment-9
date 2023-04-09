@@ -1,0 +1,25 @@
+{
+  "category": [
+    {
+      "logo": "",
+      "name": "Account & Finance",
+      "jobs_available": "300 Jobs Available"
+    },
+    {
+      "logo": "https://example.com/google_logo.png",
+      "name": "Creative Design",
+      "jobs_available": "100+ Jobs Available"
+    },
+    {
+      "logo": "https://example.com/microsoft_logo.png",
+      "name": "Marketing & Sales",
+      "jobs_available": "150 Jobs Available"
+    },
+    {
+      "logo": "https://example.com/facebook_logo.png",
+      "name": "Engineering Job",
+      "jobs_available": "224 Jobs Available"
+    }
+  ]
+  }
+
