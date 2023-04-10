@@ -1,13 +1,18 @@
-import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { useLoaderData, useParams } from 'react-router-dom';
+import HeroSection from './HeroSection';
 
 const JobDetails = () => {
-  const job = useLoaderData()
-  // console.log(`job`,job);
+  // const [jobDetails, setjobDetails] = useState("")
+  const data = useLoaderData()
+  let {id} = useParams()
+  const category = data.find(item => item.id === parseInt(id));
+  console.log(`category`,category);
 
   return (
     <div>
-      <h3 style={{textAlign:'center',color:'#2c3e50',fontSize:'24px'}}>This Is Our job details Components</h3>
+      <HeroSection>Job Details</HeroSection>
+      <h3 style={{ textAlign: 'center', color: '#2c3e50', fontSize: '24px' }}>This Is Our job details Components :{id}</h3>
 
     </div>
   );

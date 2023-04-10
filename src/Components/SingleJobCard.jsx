@@ -3,8 +3,8 @@ import { TfiLocationPin } from 'react-icons/tfi';
 import { MdOutlineAttachMoney } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 const SingleJobCard = ({ jobPost }) => {
-  console.log(jobPost);
-  const {companyLogo,companyName,jobTitle,fulltime,remoteOrOnsite,location,salary } = jobPost
+  // console.log(jobPost);
+  const {companyLogo,companyName,jobTitle,fulltime,remoteOrOnsite,location,salary,id } = jobPost
   return (
           <div className="max-w-sm p-6 bg-gray-50 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <div className="border-1 w-1/2 h-16 rounded-sm p-2 bg-gray-50 shadow-sm">
@@ -24,7 +24,7 @@ const SingleJobCard = ({ jobPost }) => {
               <div className='flex items-center mb-2'><span className='px-1'><TfiLocationPin/></span>  {location}</div>
               <div className='flex items-center'><span className='px-1'><MdOutlineAttachMoney/></span> {salary}</div>
             </div>
-            <Link to="/applied"><button type="button" className="gradient-btn mt-4">View Details</button></Link>
+            <Link to={`../jobdetails/${id}`}><button type="button" className="gradient-btn mt-4">View Details</button></Link>
           </div>
   );
 };

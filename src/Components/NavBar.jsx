@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom';
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   return (
-    <>
+    <div className='bg-white max-w-full'>
       <div className='px-4 sticky top-0 z-10 bg-white shadow-sm py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8'>
         <div className='relative flex items-center justify-between'>
           <Link
@@ -158,7 +158,7 @@ const NavBar = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
