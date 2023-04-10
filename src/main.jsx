@@ -8,6 +8,8 @@ import Home from './Components/Home'
 import Statistics from './Components/Statistics'
 import AppliedJobs from './Components/AppliedJobs'
 import Blog from './Components/Blog'
+import JobCard from './Components/JobCard'
+import { productCartData } from './Loaders/GetApplyJobsDataStorage'
 
 const router = createBrowserRouter([
   {
@@ -31,6 +33,11 @@ const router = createBrowserRouter([
       {
         path: 'blog',
         element:<Blog/>
+      },
+      {
+        path: 'jobs',
+        element: <JobCard />,
+        loader:productCartData,
       }
     ]
   },

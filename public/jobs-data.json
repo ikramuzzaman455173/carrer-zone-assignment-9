@@ -1,7 +1,7 @@
 {
   "job1": {
     "id": 1,
-    "companyLogo": "https://www.apple.com/ac/structured-data/images/knowledge_graph_logo.png?202106080951",
+    "companyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX8HBpIFaSZ55c4RxOtCCV1ncx7JkL3AqCmCn6imXmLQho-UZ8wTqoeeQeHfkWuTvdbnA&usqp=CAU",
     "jobTitle": "iOS Developer",
     "companyName": "Apple",
     "remoteOrOnsite": "Remote",
@@ -37,7 +37,7 @@
   },
   "job3": {
     "id": 3,
-    "companyLogo": "https://www.microsoft.com/en-us/CorporateResponsibility/corefocusareas/giving/img/giving-linkedin-logo.jpg",
+    "companyLogo": "https://www.freepnglogos.com/uploads/microsoft-logo-4.png",
     "jobTitle": "Senior Marketing Manager",
     "companyName": "Microsoft",
     "remoteOrOnsite": "Remote",
@@ -73,7 +73,7 @@
   },
   "job5": {
     "id": 5,
-    "companyLogo": "https://www.tesla.com/sites/default/files/images/tesla_logo_red_small.png",
+    "companyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwAKp9Qk6miAMXZaZMW5FRsNoWA8fQ7s_EUW6bK7z_BzlE_N06&s",
     "jobTitle": "Electrical Engineer",
     "companyName": "Tesla",
     "remoteOrOnsite": "Onsite",
@@ -91,7 +91,7 @@
   },
   "job6": {
     "id": 6,
-    "companyLogo": "https://logos-download.com/wp-content/uploads/2016/12/Alibaba_group_logo.png",
+    "companyLogo": "https://media.gettyimages.com/id/1245780803/photo/in-this-photo-illustration-an-alibaba-logo-seen-displayed-on-a-smartphone.jpg?s=612x612&w=0&k=20&c=rDPn4uUkwhwO_Cn6AB8e6FIeJcyh3TQGcRR6xBhxscI=",
     "jobTitle": "Product Manager",
     "companyName": "Alibaba",
     "remoteOrOnsite": "Remote",

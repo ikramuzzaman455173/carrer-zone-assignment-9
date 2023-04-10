@@ -30,21 +30,5 @@ const getStoredCart = () => {
   return shoppingCart
 }
 
-// remove specefic element from localStorage
-const removeFromDb = (id) => {
-  //get previous shopping data for stoarge
-  const storedCart = localStorage.getItem("shopping-cart")
-  if (storedCart) {
-    const shoppingCart = JSON.parse(storedCart)
-    if (id in shoppingCart) {
-      delete shoppingCart[id]
-  localStorage.setItem('shopping-cart',JSON.stringify(shoppingCart))
-    }
-  }
-}
 
-// clear all data from localStorage
-const clearShoppingCart = () => {
-  localStorage.removeItem('shopping-cart')
-}
-export { addDb, getStoredCart , removeFromDb,clearShoppingCart}
+export { addDb, getStoredCart}
