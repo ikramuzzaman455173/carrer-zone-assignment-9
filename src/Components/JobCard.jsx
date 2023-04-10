@@ -1,22 +1,25 @@
-import React, { useEffect, useState } from 'react';
+import React, {  useState } from 'react';
 import SingleJobCard from './SingleJobCard';
+import { useLoaderData } from 'react-router-dom';
 
 const JobCard = () => {
-  const [data, setData] = useState([]);
+  // const [data, setData] = useState([]);
   const [showAll, setShowAll] = useState(false);
+  // const data = useLoaderData()
+  // console.log(`datas`,data);
 
   const hnadleShowAll = () => {
     setShowAll(true);
   };
-  useEffect(() => {
-    const loadData = async () => {
-      const res = await fetch(`jobs-data.json`);
-      const jobPosts = await res.json();
-        // console.log(jobPosts,12);
-      setData(jobPosts);
-    };
-    loadData();
-  }, []);
+  // useEffect(() => {
+  //   const loadData = async () => {
+  //     const res = await fetch(`jobs-data.json`);
+  //     const jobPosts = await res.json();
+  //       // console.log(jobPosts,12);
+  //     setData(jobPosts);
+  //   };
+  //   loadData();
+  // }, []);
   return (
     <div className='my-container'>
       <div className='text-center'>
@@ -25,9 +28,9 @@ const JobCard = () => {
       </div>
       <div className="flex justify-center items-center mt-5">
         <div className="grid md:grid-cols-2 grid-cols-1 gap-8 mt-8">
-      {
+      {/* {
         data.slice(0,showAll?6:4).map(jobPost=><SingleJobCard key={jobPost.id} jobPost={jobPost}/>)
-        }
+        } */}
       </div>
       </div>
       {!showAll && (

@@ -54,7 +54,7 @@ const NavBar = () => {
             </li>
           </ul>
           <Link to="/applied">
-            <button type="button" className="gradient-btn">Applied Jobs</button>
+            <button type="button" className="gradient-btn">Start Applying</button>
           </Link>
           <div className='lg:hidden'>
             <button
@@ -149,7 +149,7 @@ const NavBar = () => {
                       </li>
                     </ul>
                     <Link to="/applied">
-                      <button type="button" className="gradient-btn mt-4">Applied Jobs</button>
+                      <button type="button" className="gradient-btn mt-4">Start Applying</button>
                     </Link>
                   </nav>
                 </div>

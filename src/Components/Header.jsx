@@ -4,7 +4,7 @@ import Hiring from '../../public/animate-header.json'
 
 const Header = () => {
   return (
-    <div className='my-container flex flex-col items-center justify-between lg:flex-row'>
+    <div className='my-container flex flex-col items-center justify-between lg:flex-row lg:mb-0'>
       {/* Text Content */}
       <div className='lg:max-w-lg lg:pr-5 lg:mb-0'>
         <div className='max-w-xl mb-6 lg:mt-8'>

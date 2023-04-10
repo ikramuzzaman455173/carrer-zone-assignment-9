@@ -8,8 +8,8 @@ import Home from './Components/Home'
 import Statistics from './Components/Statistics'
 import AppliedJobs from './Components/AppliedJobs'
 import Blog from './Components/Blog'
-import JobCard from './Components/JobCard'
-import { productCartData } from './Loaders/GetApplyJobsDataStorage'
+import JobDetails from './Components/JobDetails'
+
 
 const router = createBrowserRouter([
   {
@@ -20,12 +20,16 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home />,
-        loader:()=>fetch('job-catagory.json')
+        // loader:()=>fetch('jobs-data.json')
       },
       {
         path: 'statistics',
         element:<Statistics/>
       },
+      // {
+      //   path: "jobs",
+      //   element: <JobCard/
+      // },
       {
         path: 'applied',
         element:<AppliedJobs/>
@@ -35,10 +39,11 @@ const router = createBrowserRouter([
         element:<Blog/>
       },
       {
-        path: 'jobs',
-        element: <JobCard />,
-        loader:productCartData,
-      }
+        path: 'applied/:jobsId',
+        element: <JobDetails />,
+        loader:({params})=>fetch(`jobs-data.json/${params.jobsId}`)
+      },
+
     ]
   },
 
