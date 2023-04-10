@@ -3,9 +3,9 @@ import React from 'react';
 const Blog = () => {
   return (
     <section class="bg-slate-200">
-      <div class="py-8 px-4  max-w-screen-xl lg:py-16 lg:px-6">
+      <div class="py-8 px-4  max-w-screen-xl lg:py-16 lg:px-6 ">
         <h2 class="mb-10 text-3xl text-center lg:text-4xl tracking-tight font-extrabold text-slate-500">Blog Faq Sections</h2>
-        <div class="grid gap-8 lg:grid-cols-2">
+        <div class="grid gap-8 lg:grid-cols-2 ">
           <article class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
             <h4 class="mb-2 text-xl font-semibold tracking-tight text-slate-600 dark:text-white"><span className='gradient-text'>1. </span>When should you use context API ?</h4>
             <p class="mb-5 font-normal text-md text-gray-500 dark:text-gray-400"><span className='gradient-text'>Ans: </span>   <strong>Context API</strong> can solve many problems that modern applications face, related to state management, for example, props drilling. Many solutions can solve state management issues and props drilling, but they may increase your build size and compromise your app performance. <strong>Context API</strong> is a React built-in feature, so we don’t have to worry about performance overhead and library installing issues. </p>
