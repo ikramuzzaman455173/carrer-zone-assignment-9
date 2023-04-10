@@ -33,3 +33,11 @@
 .gradient-btn{
   @apply text-white bg-gradient-to-r from-indigo-400 to-violet-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded text-sm px-5 py-2.5 text-center mr-2 mb-2
 }
+
+.footer-text{
+  @apply flex mb-3 text-sm text-gray-500 cursor-pointer font-medium transition md:mb-2 hover:text-indigo-400
+}
+
+.footer-head-text{
+  @apply  font-medium text-gray-50 tracking-widest text-sm mb-3
+}
