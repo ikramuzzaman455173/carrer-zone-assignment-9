@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
           <Link to="/"><span className="ml-3 text-xl lg:font-extrabold md:font-bold sm:font-semibold text-white tracking-wider">CarrerZone</span></Link>
           <p className="mt-2 text-sm text-gray-500">There are many variations of passages of Lorem Ipsum , but the majority have suffered alteration in some form.</p>
-          <div className='pt-5 md:w-20 w-16 lg:m-0 mx-auto'><img src="../../public/assets/Icons/socialGroup.png" alt="socail icon image" /></div>
+          <div className='pt-5 md:w-20 w-16 lg:m-0 mx-auto'><img src="./assets/Icons/socialimg.png" alt="socail icon image"/></div>
         </div>
         <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
           <div className="lg:w-1/4 md:w-1/2 w-full px-4">
