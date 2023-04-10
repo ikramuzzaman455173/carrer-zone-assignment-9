@@ -1,7 +1,7 @@
-{
-  "job1": {
+[
+  {
     "id": 1,
-    "companyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX8HBpIFaSZ55c4RxOtCCV1ncx7JkL3AqCmCn6imXmLQho-UZ8wTqoeeQeHfkWuTvdbnA&usqp=CAU",
+    "companyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWeaRiIUClz_zmb4wOQADIgdA2q7ESjS4P6w&usqp=CAU",
     "jobTitle": "iOS Developer",
     "companyName": "Apple",
     "remoteOrOnsite": "Remote",
@@ -17,7 +17,7 @@
       "phone": "(111) 111-1111"
     }
   },
-  "job2": {
+  {
     "id": 2,
     "companyLogo": "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png",
     "jobTitle": "Software Engineer",
@@ -35,7 +35,7 @@
       "phone": "(222) 222-2222"
     }
   },
-  "job3": {
+  {
     "id": 3,
     "companyLogo": "https://www.freepnglogos.com/uploads/microsoft-logo-4.png",
     "jobTitle": "Senior Marketing Manager",
@@ -53,9 +53,9 @@
       "phone": "(333) 333-3333"
     }
   },
-  "job4": {
+  {
     "id": 4,
-    "companyLogo": "https://www.facebook.com/images/fb_icon_325x325.png",
+    "companyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_qdakoaEqYDqoCKQmliKLOg5VgV0i4qn-eQ&usqp=CAU",
     "jobTitle": "Data Scientist",
     "companyName": "Facebook",
     "remoteOrOnsite": "Onsite",
@@ -71,7 +71,7 @@
       "phone": "(444) 444-4444"
     }
   },
-  "job5": {
+  {
     "id": 5,
     "companyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwAKp9Qk6miAMXZaZMW5FRsNoWA8fQ7s_EUW6bK7z_BzlE_N06&s",
     "jobTitle": "Electrical Engineer",
@@ -89,9 +89,9 @@
       "phone": "(555) 555-5555"
     }
   },
-  "job6": {
+  {
     "id": 6,
-    "companyLogo": "https://media.gettyimages.com/id/1245780803/photo/in-this-photo-illustration-an-alibaba-logo-seen-displayed-on-a-smartphone.jpg?s=612x612&w=0&k=20&c=rDPn4uUkwhwO_Cn6AB8e6FIeJcyh3TQGcRR6xBhxscI=",
+    "companyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVPNYoN8tafZnDjlti-QNvH97MRmqpo3Ps8Q&usqp=CAU",
     "jobTitle": "Product Manager",
     "companyName": "Alibaba",
     "remoteOrOnsite": "Remote",
@@ -107,4 +107,4 @@
       "phone": "+86 10 57155000"
     }
   }
-}
+]
