@@ -1,0 +1,12 @@
+.hero-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-content{
+  display:flex;
+  align-items: center;
+  justify-content: start;
+  flex-wrap:wrap;
+}

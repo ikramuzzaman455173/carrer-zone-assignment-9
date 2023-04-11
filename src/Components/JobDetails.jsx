@@ -1,11 +1,9 @@
-import React, { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import HeroSection from './HeroSection';
 import SingleJobDetails from './SingleJobDetails';
 import { addDb } from '../utils/fakeDb';
 
 const JobDetails = () => {
-  // const [jobDetails, setjobDetails] = useState("")
   const data = useLoaderData()
   let {id} = useParams()
   const category = data.find(item => item.id === parseInt(id));
@@ -28,7 +26,6 @@ const JobDetails = () => {
     <div>
       <HeroSection>Job Details</HeroSection>
       <SingleJobDetails category={category} handleApply={handleApply} />
-
     </div>
   );
 };

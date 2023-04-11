@@ -1,9 +1,13 @@
 import React from 'react';
+import HeroSection from './HeroSection';
+import SingleAppliedJobs from './SingleAppliedJobs';
 
 const AppliedJobs = () => {
   return (
     <div>
-      <h3 style={{textAlign:'center',color:'#2c3e50',fontSize:'24px'}}>This Is Our Applied Jobs Components</h3>
+      <HeroSection>Applied Jobs</HeroSection>
+      <SingleAppliedJobs/>
+
     </div>
   );
 };
