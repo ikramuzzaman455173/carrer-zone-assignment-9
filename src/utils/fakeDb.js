@@ -1,33 +1,33 @@
 // add data to local storage
 
 const addDb = (id) => {
-  let shoppingCart = {}
+  let applyJob = {}
   //get previous shopping data for stoarge
-  const storedCart = localStorage.getItem("shopping-cart")
-  if (storedCart) {
-    // shoppingCart= JSON.parse(storedCart)
-    shoppingCart = JSON.parse(storedCart)
+  const storeJob = localStorage.getItem("job-post")
+  if (storeJob) {
+    // applyJob= JSON.parse(storeJob)
+    applyJob = JSON.parse(storeJob)
   }
   // add quanTity products
-  const quanTity = shoppingCart[id]
+  const quanTity = applyJob[id]
   if (quanTity) {
-    const newQuantity = quanTity + 1
-    shoppingCart[id]=newQuantity
+    const newQuantity = quanTity
+    applyJob[id]=newQuantity
   } else {
-    shoppingCart[id] = 1
+    applyJob[id] = 1
   }
-  localStorage.setItem('shopping-cart',JSON.stringify(shoppingCart))
+  localStorage.setItem('job-post',JSON.stringify(applyJob))
 }
 
 
 const getStoredCart = () => {
-  let shoppingCart = {}
+  let applyJob = {}
   //get previous shopping data for stoarge
-  const storedCart = localStorage.getItem("shopping-cart")
-  if (storedCart) {
-    shoppingCart=JSON.parse(storedCart)
+  const storeJob = localStorage.getItem("job-post")
+  if (storeJob) {
+    applyJob=JSON.parse(storeJob)
   }
-  return shoppingCart
+  return applyJob
 }
 
 

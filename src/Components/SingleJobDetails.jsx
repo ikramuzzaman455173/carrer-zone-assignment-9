@@ -1,7 +1,12 @@
 import React from 'react'
 
-const SingleJobDetails = ({ category }) => {
-  const {jobDescription,jobResponsibility,jobTitle,location,salary,contactInformation,experiences,educationalRequirements  }=category
+const SingleJobDetails = ({ category,handleApply }) => {
+  const { jobDescription, jobResponsibility, jobTitle, location, salary, contactInformation, experiences, educationalRequirements } = category
+
+
+
+
+
   return (
     <>
       <section className="text-gray-600 body-font">
@@ -51,7 +56,7 @@ const SingleJobDetails = ({ category }) => {
               </div>
               </div>
 
-            <button className="gradient-btn">Apply Now</button>
+            <button className="gradient-btn" onClick={()=>handleApply(category)}>Apply Now</button>
           </div>
         </div>
       </section>
