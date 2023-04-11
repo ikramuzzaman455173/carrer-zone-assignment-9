@@ -25,7 +25,7 @@ const JobDetails = () => {
   return (
     <div>
       <HeroSection>Job Details</HeroSection>
-      <SingleJobDetails category={category} handleApply={handleApply} />
+      <div className='my-5'><SingleJobDetails category={category} handleApply={handleApply} /></div>
     </div>
   );
 };
