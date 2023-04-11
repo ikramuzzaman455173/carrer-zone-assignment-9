@@ -2,8 +2,8 @@ import React from 'react'
 
 const HeroSection = ({children}) => {
   return (
-    <div>
-      <h3 className='text-3xl text-center'>{children}</h3>
+    <div className='hero-section bg-slate-50 mb-5'>
+      <h3 className='text-center font-bold text-3xl my-5'>{children}</h3>
     </div>
   )
 }
