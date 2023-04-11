@@ -8,17 +8,16 @@ const JobDetails = () => {
   let {id} = useParams()
   const category = data.find(item => item.id === parseInt(id));
 
-
   const handleApply = (jobApply) => {
-    console.log(`jobApply`, jobApply);
-    const exists = data.find((pd) => pd.id === jobApply.id);
-    if (!exists) {
-      alert('Already Apply The This Jobs !')
-      return
-    } else {
-      const remaining = data.filter((pd) => pd.id !== jobApply.id);
-      console.log(remaining,'reamiing');
-    }
+    // const exists = data.find((pd) => pd.id !== jobApply.id);
+    // if (!exists) {
+    //   console.log(exists);
+    //   return
+    // } else {
+    //   const remaining = data.filter((pd) => pd.id === jobApply.id);
+    //   console.log(remaining);
+    //   alert('Applied This Job')
+    // }
     addDb(jobApply.id);
   }
 

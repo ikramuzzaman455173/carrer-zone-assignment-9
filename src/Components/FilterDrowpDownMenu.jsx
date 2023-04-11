@@ -6,7 +6,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
 
-const FilterDrowpDownMenu = () => {
+const FilterDrowpDownMenu = ({handleFilterRemoteJob,handleFilterOnsiteJob}) => {
   return (
     <div className='flex justify-end my-5 max-w-7xl items-center px-8 text-white'>
       <ul className='flex items-center'>
@@ -35,7 +35,7 @@ const FilterDrowpDownMenu = () => {
                   <Menu.Item>
                     {({ active }) => (
                       <a
-                        href='#'
+                        href='#' onClick={handleFilterRemoteJob}
                         className={classNames(
                           active
                             ? 'bg-gray-100 text-gray-900'
@@ -50,7 +50,7 @@ const FilterDrowpDownMenu = () => {
                   <Menu.Item>
                     {({ active }) => (
                       <a
-                        href='#'
+                        href='#' onClick={handleFilterOnsiteJob}
                         className={classNames(
                           active
                             ? 'bg-gray-100 text-gray-900'

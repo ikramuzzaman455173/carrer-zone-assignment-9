@@ -6,7 +6,28 @@ import SingleAppliedJobs from './SingleAppliedJobs';
 
 const AppliedJobs = () => {
   const [products, setProducts] = useState([]);
-const [jobPost, setJobPost] = useState([]);
+  const [jobPost, setJobPost] = useState([]);
+
+  const handleFilterRemoteJob = () => {
+    const filterRemoteJob = jobPost.filter(job => job.remoteOrOnsite === 'Remote')
+    if (filterRemoteJob) {
+      console.log(`filter remote`, filterRemoteJob);
+      setJobPost(filterRemoteJob)
+      return
+    }
+    setJobPost(jobPost)
+  }
+
+
+  const handleFilterOnsiteJob = () => {
+    const filterOnsiteJob = jobPost.filter(job => job.remoteOrOnsite === 'Onsite')
+    if (filterOnsiteJob) {
+      console.log(`filter onsite`, filterOnsiteJob);
+      setJobPost(filterOnsiteJob)
+      return
+    }
+  }
+
 
 
 useEffect(() => {
@@ -43,7 +64,7 @@ useEffect(() => {
     <div>
       <HeroSection>Applied Jobs</HeroSection>
       <div>
-        <FilterDrowpDownMenu />
+        <FilterDrowpDownMenu handleFilterRemoteJob={handleFilterRemoteJob} handleFilterOnsiteJob={handleFilterOnsiteJob} />
         {
           jobPost.map((appliedJob=><SingleAppliedJobs key={appliedJob.id} appliedJob={appliedJob}/>
           ))
