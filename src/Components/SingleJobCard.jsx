@@ -21,7 +21,7 @@ const SingleJobCard = ({ jobPost }) => {
               </button>
             </div>
             <div className="grid md:grid-cols-2 mt-4">
-              <div className='flex items-center mb-2'><span className='px-1'><TfiLocationPin/></span>  {location}</div>
+              <div className='flex items-center lg:mb-0 pb-2'><span className='px-1'><TfiLocationPin/></span>  {location}</div>
               <div className='flex items-center'><span className='px-1'><MdOutlineAttachMoney/></span> {salary}</div>
             </div>
             <Link to={`../jobdetails/${id}`}><button type="button" className="gradient-btn mt-4">View Details</button></Link>

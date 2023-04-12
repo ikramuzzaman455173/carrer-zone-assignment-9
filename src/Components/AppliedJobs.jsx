@@ -28,6 +28,17 @@ const AppliedJobs = () => {
     }
   }
 
+  const handleShowAllAppliJob = () => {
+    const getStoreData = getStoredCart();
+    let saveJobPost = [];
+    for (const id in getStoreData) {
+      const addedProduct = products.find((pd) => pd.id === parseInt(id));
+      if (addedProduct) {
+        saveJobPost.push(addedProduct);
+      }
+    }
+    setJobPost(saveJobPost);
+  }
 
 
 useEffect(() => {
@@ -64,7 +75,7 @@ useEffect(() => {
     <div>
       <HeroSection>Applied Jobs</HeroSection>
       <div>
-        <FilterDrowpDownMenu handleFilterRemoteJob={handleFilterRemoteJob} handleFilterOnsiteJob={handleFilterOnsiteJob} />
+        <FilterDrowpDownMenu handleFilterRemoteJob={handleFilterRemoteJob} handleFilterOnsiteJob={handleFilterOnsiteJob} handleShowAllAppliJob={handleShowAllAppliJob} />
         {
           jobPost.map((appliedJob=><SingleAppliedJobs key={appliedJob.id} appliedJob={appliedJob}/>
           ))

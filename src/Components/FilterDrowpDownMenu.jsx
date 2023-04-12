@@ -6,7 +6,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
 
-const FilterDrowpDownMenu = ({handleFilterRemoteJob,handleFilterOnsiteJob}) => {
+const FilterDrowpDownMenu = ({handleFilterRemoteJob,handleFilterOnsiteJob,handleShowAllAppliJob}) => {
   return (
     <div className='flex justify-end my-5 max-w-7xl items-center px-8 text-white'>
       <ul className='flex items-center'>
@@ -34,11 +34,10 @@ const FilterDrowpDownMenu = ({handleFilterRemoteJob,handleFilterOnsiteJob}) => {
                 <div className='py-1'>
                   <Menu.Item>
                     {({ active }) => (
-                      <a
-                        href='#' onClick={handleFilterRemoteJob}
+                      <a onClick={handleFilterRemoteJob}
                         className={classNames(
                           active
-                            ? 'bg-gray-100 text-gray-900'
+                            ? 'bg-gray-100 text-gray-900 cursor-pointer'
                             : 'text-gray-700',
                           'block px-4 py-2 text-md font-semibold'
                         )}
@@ -49,11 +48,10 @@ const FilterDrowpDownMenu = ({handleFilterRemoteJob,handleFilterOnsiteJob}) => {
                   </Menu.Item>
                   <Menu.Item>
                     {({ active }) => (
-                      <a
-                        href='#' onClick={handleFilterOnsiteJob}
+                      <a onClick={handleFilterOnsiteJob}
                         className={classNames(
                           active
-                            ? 'bg-gray-100 text-gray-900'
+                            ? 'bg-gray-100 text-gray-900 cursor-pointer'
                             : 'text-gray-700',
                           'block px-4 py-2 text-md font-semibold'
                         )}
@@ -61,7 +59,23 @@ const FilterDrowpDownMenu = ({handleFilterRemoteJob,handleFilterOnsiteJob}) => {
                         Onsite
                       </a>
                     )}
-                  </Menu.Item>
+                </Menu.Item>
+
+                  <Menu.Item>
+                    {({ active }) => (
+                      <a onClick={handleShowAllAppliJob}
+                        className={classNames(
+                          active
+                            ? 'bg-gray-100 text-gray-900 cursor-pointer'
+                            : 'text-gray-700',
+                          'block px-4 py-2 text-md font-semibold'
+                        )}
+                      >
+                        All Applied Job
+                      </a>
+                    )}
+                </Menu.Item>
+
               </div>
               </Menu.Items>
             </Transition>

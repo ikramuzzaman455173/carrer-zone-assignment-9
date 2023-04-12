@@ -54,7 +54,7 @@ const NavBar = () => {
             </li>
           </ul>
           <Link to="/applied">
-            <button type="button" className="gradient-btn">Start Applying</button>
+            <button type="button" className="gradient-btn">Star Applying</button>
           </Link>
           <div className='lg:hidden'>
             <button
