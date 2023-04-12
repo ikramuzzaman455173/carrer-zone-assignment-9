@@ -11,7 +11,6 @@ const AppliedJobs = () => {
   const handleFilterRemoteJob = () => {
     const filterRemoteJob = jobPost.filter(job => job.remoteOrOnsite === 'Remote')
     if (filterRemoteJob) {
-      console.log(`filter remote`, filterRemoteJob);
       setJobPost(filterRemoteJob)
       return
     }
@@ -22,7 +21,6 @@ const AppliedJobs = () => {
   const handleFilterOnsiteJob = () => {
     const filterOnsiteJob = jobPost.filter(job => job.remoteOrOnsite === 'Onsite')
     if (filterOnsiteJob) {
-      console.log(`filter onsite`, filterOnsiteJob);
       setJobPost(filterOnsiteJob)
       return
     }

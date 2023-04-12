@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import { TfiLocationPin } from 'react-icons/tfi';
 import { MdOutlineAttachMoney } from 'react-icons/md';
 const SingleAppliedJobs = ({ appliedJob }) => {
-  // console.log(`jobPost`, appliedJob);
   const { companyLogo, companyName, jobTitle, location, salary, remoteOrOnsite, fulltime, id } = appliedJob
 
   return (

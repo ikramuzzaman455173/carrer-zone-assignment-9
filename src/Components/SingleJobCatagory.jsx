@@ -1,7 +1,6 @@
 import React from 'react';
 
 const SingleJobCatagory = ({ jobCategory }) => {
-  // console.log(jobCategory);
   const {logo,name,jobs_available,}=jobCategory
   return (
       <div className="max-w-sm p-6 bg-gray-50 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">

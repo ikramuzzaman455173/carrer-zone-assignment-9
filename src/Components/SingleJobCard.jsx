@@ -3,7 +3,6 @@ import { TfiLocationPin } from 'react-icons/tfi';
 import { MdOutlineAttachMoney } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 const SingleJobCard = ({ jobPost }) => {
-  // console.log(jobPost);
   const {companyLogo,companyName,jobTitle,fulltime,remoteOrOnsite,location,salary,id } = jobPost
   return (
           <div className="max-w-sm p-6 bg-gray-50 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
