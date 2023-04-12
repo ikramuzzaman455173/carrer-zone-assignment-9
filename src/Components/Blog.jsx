@@ -1,7 +1,10 @@
 import React from 'react';
+import HeroSection from './HeroSection';
 
 const Blog = () => {
   return (
+    <>
+      <HeroSection>Blog Page</HeroSection>
     <section className="bg-slate-200 container px-5  mx-auto flex flex-wrap items-center my-10 rounded-md">
       <div className="py-8 px-4  max-w-screen-xl lg:py-16 lg:px-6 ">
         <h2 className="mb-10 text-3xl text-center lg:text-4xl tracking-tight font-extrabold text-slate-500">Blog Faq Sections</h2>
@@ -29,7 +32,8 @@ const Blog = () => {
           </article>
         </div>
       </div>
-    </section>
+      </section>
+      </>
   );
 };
 
