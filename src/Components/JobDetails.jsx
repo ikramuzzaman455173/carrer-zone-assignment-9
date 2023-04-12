@@ -19,7 +19,7 @@ const JobDetails = () => {
         return
       }
     }
-    toast.success("Wow You Are Apply This Job");
+    toast.success("Wow You Are Apply This Job !!!");
     addDb(jobApply.id);
   }
 
@@ -32,4 +32,3 @@ const JobDetails = () => {
 };
 
 export default JobDetails;
-
