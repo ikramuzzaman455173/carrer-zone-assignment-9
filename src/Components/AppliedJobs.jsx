@@ -9,21 +9,19 @@ const AppliedJobs = () => {
   const [jobPost, setJobPost] = useState([]);
 
   const handleFilterRemoteJob = () => {
-    const filterRemoteJob = jobPost.filter(job => job.remoteOrOnsite === 'Remote')
+    const filterRemoteJob = products.filter(job => job.remoteOrOnsite === 'Remote')
     if (filterRemoteJob) {
       setJobPost(filterRemoteJob)
-      return
     }
-    setJobPost(jobPost)
   }
 
 
   const handleFilterOnsiteJob = () => {
-    const filterOnsiteJob = jobPost.filter(job => job.remoteOrOnsite === 'Onsite')
+    const filterOnsiteJob = products.filter(job => job.remoteOrOnsite === 'Onsite')
     if (filterOnsiteJob) {
       setJobPost(filterOnsiteJob)
-      return
     }
+
   }
 
   const handleShowAllAppliJob = () => {
@@ -66,8 +64,6 @@ useEffect(() => {
   }
   setJobPost(saveJobPost);
 }, [products]);
-
-
 
   return (
     <div>
